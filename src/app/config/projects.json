@@ -17,7 +17,7 @@
         {
             "title": "Bazar - backend",
             "tech": ["NODE.JS", "JAVASCRIPT", "JOI", "MONGOOSE", "CLOUDINARY"],
-            "content": "Backend for 'Bazar' - local community app.",
+            "content": "Backend for 'Bazar app'.",
             "live": "https://lit-plains-38046.herokuapp.com/",
             "code": "https://github.com/GrzesiekMusial/bazarapi"
         },
@@ -32,7 +32,7 @@
                 "youtube api",
                 "iframe"
             ],
-            "content": "Train your foreign language skills with YouTube - use a microphone to check your pronunciation, try quiz mode to fill in missing words.",
+            "content": "Language learning app. Train your foreign language skills with YouTube - use a microphone to check your pronunciation, try quiz mode to fill in missing words.",
             "live": "https://talkingwithyt.netlify.app/"
         }
     ]

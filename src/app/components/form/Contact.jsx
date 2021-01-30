@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./../common/button";
+import Spinner from "./../common/spinner";
 
 export default class MyForm extends React.Component {
     constructor(props) {
@@ -12,11 +13,17 @@ export default class MyForm extends React.Component {
 
     render() {
         const { status } = this.state;
+
+        const send = (e) => {
+            this.setState({ status: "load" });
+            this.submitForm(e);
+        };
+
         return (
             <form
                 name="myForm"
                 className="contactForm"
-                onSubmit={this.submitForm}
+                onSubmit={send}
                 action="https://formspree.io/f/xwkwrjov"
                 method="POST"
             >
@@ -34,14 +41,15 @@ export default class MyForm extends React.Component {
                     type="text"
                     name="message"
                 />
-                {status === "SUCCESS" ? (
-                    <p className="hi">THANKS! :)</p>
-                ) : (
-                    <Button text="submit" />
-                )}
+                {status === "SUCCESS" && <p className="hi">THANKS! :)</p>}
                 {status === "ERROR" && (
-                    <p className="hi">Ooops! There was an error.</p>
+                    <>
+                        <Button text="try again" />
+                        <p className="hi">Ooops! There was an error.</p>
+                    </>
                 )}
+                {status === "" && <Button text="submit" />}
+                {status === "load" && <Spinner />}
             </form>
         );
     }

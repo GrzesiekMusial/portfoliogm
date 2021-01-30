@@ -13,9 +13,9 @@
             "title": "Shipping calculator",
             "marks": [
                 "Calculates boxes quantity and shipping costs.",
-                "Built on Google Sheet."
+                "Built on G-Suite."
             ],
-            "content": "My second \"program\" was built on Google Sheets. I didn't know much about programming yet, but I have Excel functions! My intention was to have a toll which can be accessible and used by anyone (the entire company was working on G-suite) . Calculator was built with compressed sheets and rss import for actual exchange rate, which calculated the quantity of boxes needed for product shipment and their shipping costs.",
+            "content": "My second tool was built on Google Sheets. I didn't know much about programming yet, but I had Excel functions! My intention was to have a toll which can be accessible and used by anyone (the entire company was working on G-Suite) . Calculator was built with compressed sheets and rss import for actual exchange rate, which calculated the quantity of boxes needed for product shipment and their shipping costs.",
             "image": "https://res.cloudinary.com/gregor1494/image/upload/v1611758016/portfolio/calculator_bbpmvx.png"
         },
         {
