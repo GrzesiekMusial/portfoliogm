@@ -25,7 +25,7 @@ const NotFound = () => {
                     </h1>
                 </div>
                 <div className="navigationPanel">
-                    <Navigation path="/home" text="home" />
+                    <Navigation path="/" text="home" />
                 </div>
             </div>
         </>
