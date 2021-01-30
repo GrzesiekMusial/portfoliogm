@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "title": "Prototype - Soldering robot",
+            "marks": [
+                "Solders a battery to pcb.",
+                "Built from scrap & Arduino."
+            ],
+            "content": "My very first project which was started by a bet with my colleagues. I decided to build a soldering robot for our production department, which will have double efficiency. I took some scrap, arduino, wrote my first lines of code and built a prototype, ready for use. ",
+            "image": "https://res.cloudinary.com/gregor1494/image/upload/v1611759511/portfolio/robot_kns9vh.gif"
+        },
+        {
+            "title": "Shipping calculator",
+            "marks": [
+                "Calculates boxes quantity and shipping costs.",
+                "Built on Google Sheet."
+            ],
+            "content": "My second \"program\" was built on Google Sheets. I didn't know much about programming yet, but I have Excel functions! My intention was to have a toll which can be accessible and used by anyone (the entire company was working on G-suite) . Calculator was built with compressed sheets and rss import for actual exchange rate, which calculated the quantity of boxes needed for product shipment and their shipping costs.",
+            "image": "https://res.cloudinary.com/gregor1494/image/upload/v1611758016/portfolio/calculator_bbpmvx.png"
+        },
+        {
+            "title": "Bot Sage-invoice",
+            "marks": [
+                "Automates in 90% the process of creating invoices in ERP System.",
+                "Built on Python."
+            ],
+            "content": "My third project, and at the same time the first serious program build on python was an invoice-maker bot. In every company there is a lot of repetitive tasks which have to be done. In my constantly changing, startup environment we didn't have resources for serious integration of all of our systems. As I was interested in python, and preferred to spend time on learning rather than doing the same tasks over and over again, I built a bot with a graphic interface, which creates invoices in Sage, with functionality of sending automatically invoices to the clients. With this tool one person was able to take care of all tasks much faster. ",
+            "image": "https://res.cloudinary.com/gregor1494/image/upload/v1611758023/portfolio/python-1200x675_xmjnxn.jpg"
+        },
+        {
+            "title": "Process optimization",
+            "marks": [
+                "Setting up processes from finished goods to invoicing and shipment.",
+                "Departments cooperation."
+            ],
+            "content": "Nowadays time is priceless. Fresh businesses suffer from oversights caused by work overload.  I have been cooperating with various departments to set up processes, through production, invoicing and shipment, to get the best time efficiency. Bye, bye overhours!",
+            "image": "https://res.cloudinary.com/gregor1494/image/upload/v1611761625/portfolio/Work-PNG-Photo_iqu9mv.png"
+        }
+    ]
+}

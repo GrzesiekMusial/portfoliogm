@@ -1,0 +1,218 @@
+@mixin btn-border-slide($color, $hoverColor, $borderWidth, $time) {
+    $easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+    position: relative;
+
+    display: inline-block;
+    padding: 0.8em 0.8em;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+
+        height: $borderWidth;
+        width: 100%;
+
+        background-color: $color;
+    }
+
+    &:before {
+        top: 0;
+    }
+
+    &:after {
+        bottom: 0;
+    }
+
+    &:hover {
+        & > * {
+            & > * {
+                &:before,
+                &:after {
+                    transform: translate3d(0, 0, 0);
+                }
+
+                & > * {
+                    &:before,
+                    &:after {
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+
+    & > * {
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+
+            height: 100%;
+            width: $borderWidth;
+
+            background-color: $color;
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+
+        & > * {
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                z-index: 9;
+
+                height: $borderWidth;
+                width: 100%;
+
+                background-color: $hoverColor;
+            }
+
+            &:before {
+                top: 0;
+
+                transform: translate3d(-105%, 0, 0);
+                transition: transform $time $easing;
+            }
+
+            &:after {
+                bottom: 0;
+
+                transform: translate3d(105%, 0, 0);
+                transition: transform $time $easing;
+            }
+
+            & > * {
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    z-index: 9;
+
+                    height: 100%;
+                    width: $borderWidth;
+
+                    background-color: $hoverColor;
+                }
+
+                &:before {
+                    left: 0;
+
+                    transform: translate3d(0, 105%, 0);
+                    transition: transform $time $easing;
+                }
+
+                &:after {
+                    right: 0;
+
+                    transform: translate3d(0, -105%, 0);
+                    transition: transform $time $easing;
+                }
+            }
+        }
+    }
+}
+
+.navigation {
+    position: relative;
+    background-color: transparent;
+    outline: unset;
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &--button {
+        border-radius: 5px;
+        margin: 20px 0px;
+        width: 80%;
+        max-width: 300px;
+        min-width: fit-content;
+        text-align: center;
+        text-decoration: none;
+        color: grey;
+        font-size: 25px;
+
+        transition: opacity 1s;
+        box-shadow: 0 0 1px var(--base-shadow);
+
+        & span:last-of-type {
+            transition: opacity 1s;
+        }
+
+        &:active {
+            box-shadow: 0 0 4px var(--text-special);
+        }
+
+        &:hover {
+            color: var(--text-special);
+            text-shadow: 0 0 1px var(--text-special);
+        }
+
+        @include btn-border-slide(
+            var(--base-special),
+            var(--text-special),
+            2px,
+            0.8s
+        );
+    }
+}
+
+.navigationPanel {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 3;
+
+    & .navigation--button {
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: 1000px) {
+        flex-direction: row;
+
+        & .navigation::after {
+            background-image: url(https://res.cloudinary.com/gregor1494/image/upload/v1611960377/portfolio/arrow_qwtx3u.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: "";
+            min-height: -moz-fit-content;
+            min-height: fit-content;
+            position: absolute;
+            opacity: 0.5;
+            z-index: 1;
+            width: 400px;
+            height: 500px;
+            animation: arrow 20s infinite linear alternate;
+        }
+    }
+    justify-content: space-around;
+}
+
+@keyframes arrow {
+    0% {
+        transform: rotate(-10deg) translateX(350px) translateY(-65px);
+    }
+    100% {
+        transform: rotate(0deg) translateX(300px) translateY(-60px);
+    }
+}

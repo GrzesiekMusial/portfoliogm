@@ -1,0 +1,85 @@
+.header {
+    transition: all 0.5s;
+    box-shadow: 0 0 5px var(--base-shadow);
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 9;
+    width: 100%;
+    background-color: var(--base-o);
+
+    & a {
+        display: flex;
+    }
+
+    &__logo {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        & img {
+            width: 100px;
+        }
+    }
+
+    &__hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+
+        @media screen and (min-width: 800px) {
+            display: none;
+        }
+    }
+
+    &__full {
+        @media screen and (max-width: 799px) {
+            display: none;
+        }
+        &__buttons {
+            width: 50%;
+            height: 100%;
+            min-width: 500px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            &--active {
+                border-bottom: 1px solid var(--text-special);
+                box-shadow: 0 4px 2px -2px var(--text-special);
+                text-shadow: 0 0 2px var(--text-special);
+            }
+
+            &--button {
+                color: var(--text-special);
+                font-weight: bold;
+                transition: font-size 0.5s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                font-size: 1.5em;
+                height: 100%;
+                width: 100%;
+
+                &:hover {
+                    font-size: 2em;
+                    border-bottom: 1px solid var(--text-special);
+                    box-shadow: 0 4px 2px -2px var(--text-special);
+                }
+
+                &:active {
+                    border: unset;
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+}

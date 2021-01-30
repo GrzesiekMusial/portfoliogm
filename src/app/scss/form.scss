@@ -1,0 +1,77 @@
+.contactForm {
+    resize: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+    z-index: 3;
+
+    * {
+        text-align: center;
+        max-width: 1000px;
+    }
+
+    & label {
+        font-size: 0px;
+    }
+
+    & p {
+        font-size: 1.5em;
+        color: var(--text-special);
+    }
+
+    & input,
+    textarea {
+        margin: 0 !important;
+        padding: 5px !important;
+        border: 2px solid var(--base-special-two) !important;
+
+        background-color: var(--base-special);
+        opacity: 0.8;
+        width: 90%;
+        resize: none;
+        outline: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 400 !important;
+        &:hover {
+            opacity: 1;
+        }
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    & input {
+        height: 30px;
+    }
+
+    & textarea {
+        height: 200px;
+    }
+
+    & button {
+        background-color: transparent;
+        width: fit-content;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        outline: none;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid var(--text);
+    -webkit-text-fill-color: var(--text);
+    -webkit-box-shadow: 0 0 0px 1000px var(--base-special-two) inset;
+    transition: background-color 5000s ease-in-out 0s;
+    opacity: 1;
+}

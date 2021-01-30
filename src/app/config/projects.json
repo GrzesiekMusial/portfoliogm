@@ -1,0 +1,39 @@
+{
+    "projects": [
+        {
+            "title": "Portfolio",
+            "tech": ["REACT", "HTML", "CSS / SCSS", "JAVASCRIPT"],
+            "content": "My portfolio.",
+            "live": "http://localhost:3000/projects",
+            "code": "https://github.com/GrzesiekMusial/portfolio-react"
+        },
+        {
+            "title": "Bazar",
+            "tech": ["REACT", "PWA", "YUP", "HTML", "CSS / SCSS", "JAVASCRIPT"],
+            "content": "The app for a local community.\nAnnounce important information on the board, sell things on the market.",
+            "live": "https://fathomless-reef-86046.herokuapp.com/board",
+            "code": "https://github.com/GrzesiekMusial/bazar"
+        },
+        {
+            "title": "Bazar - backend",
+            "tech": ["NODE.JS", "JAVASCRIPT", "JOI", "MONGOOSE", "CLOUDINARY"],
+            "content": "Backend for 'Bazar' - local community app.",
+            "live": "https://lit-plains-38046.herokuapp.com/",
+            "code": "https://github.com/GrzesiekMusial/bazarapi"
+        },
+        {
+            "title": "Talking with YT",
+            "tech": [
+                "HTML",
+                "CSS / SCSS",
+                "JAVASCRIPT",
+                "Webpack",
+                "speech api",
+                "youtube api",
+                "iframe"
+            ],
+            "content": "Train your foreign language skills with YouTube - use a microphone to check your pronunciation, try quiz mode to fill in missing words.",
+            "live": "https://talkingwithyt.netlify.app/"
+        }
+    ]
+}

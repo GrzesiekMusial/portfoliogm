@@ -1,0 +1,40 @@
+.alpha {
+    color: var(--text-special);
+    font-weight: normal;
+    filter: blur(4px);
+    text-shadow: -50px -40px var(--text-special);
+}
+
+.crash {
+    &:hover {
+        visibility: hidden;
+        & + span {
+            color: var(--err);
+            opacity: 0.5;
+        }
+    }
+}
+
+.hi {
+    color: var(--text-special);
+    font-weight: bold;
+    font-size: 40px;
+    font-size: 1.5em;
+}
+
+@keyframes hi {
+    0% {
+        color: var(--text);
+        text-shadow: -5px -5px var(--text-shadow);
+        filter: blur(4px);
+    }
+    50% {
+        color: var(--text-special);
+        filter: blur(1px);
+    }
+    100% {
+    }
+}
+
+.spammer {
+}

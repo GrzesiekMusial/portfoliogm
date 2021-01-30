@@ -1,0 +1,37 @@
+.sidebar {
+    transition: left 1s;
+    position: absolute;
+    background-color: var(--base);
+    width: 100%;
+    max-width: 400px;
+    left: -400px;
+    z-index: 8;
+    height: 100%;
+    top: 60px;
+
+    display: flex;
+    flex-direction: column;
+
+    &--button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: bold;
+        font-size: 2em;
+        width: 100%;
+        height: 70px;
+        border-bottom: 4px solid var(--base-special-o);
+    }
+
+    &--active {
+        background-color: var(--base-special-two);
+    }
+
+    &--open {
+        @media screen and (max-width: 799px) {
+            left: 0px;
+        }
+    }
+}
