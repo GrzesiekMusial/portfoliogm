@@ -44,7 +44,7 @@ const Header = ({ isMenu, setIsMenu }) => {
     });
 
     window.onscroll = function () {
-        // setIsMenu(false);
+        setIsMenu(false);
         const header = document.getElementById("header");
         var currentScrollPos = window.pageYOffset;
         if (50 > currentScrollPos) {

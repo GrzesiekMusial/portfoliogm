@@ -15,12 +15,16 @@
     }
 
     &__logo {
+        user-select: none;
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 5px;
         margin-top: 5px;
+
+        justify-content: flex-end;
+
         & img {
-            width: 100px;
+            width: 70px;
         }
     }
 

@@ -8,6 +8,7 @@
     bottom: 0;
 
     &--icon {
+        cursor: pointer;
         margin: 10px;
         color: var(--text) !important;
         &:hover {
