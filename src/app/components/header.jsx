@@ -8,7 +8,7 @@ const Header = ({ isMenu, setIsMenu }) => {
     const [active, setActive] = useState(null);
 
     const buttons = [
-        { ref: "/home", name: "HOME" },
+        { ref: "/", name: "HOME" },
         {
             ref: "/projects",
             name: "PROJECTS",
@@ -71,7 +71,7 @@ const Header = ({ isMenu, setIsMenu }) => {
                     />
                 </div>
 
-                <NavLink to="/home" className="header__logo">
+                <NavLink to="/" className="header__logo">
                     <img
                         alt="Logo"
                         src="https://res.cloudinary.com/gregor1494/image/upload/v1611775790/portfolio/logo_dtlww4.svg"
