@@ -8,14 +8,20 @@ const Header = ({ isMenu, setIsMenu }) => {
     const [active, setActive] = useState(null);
 
     const buttons = [
-        { ref: "/", name: "HOME" },
+        {
+            ref: "/",
+            name: "HOME",
+            value: "",
+        },
         {
             ref: "/projects",
             name: "PROJECTS",
+            value: "projects",
         },
         {
             ref: "/contact",
             name: "CONTACT",
+            value: "contact",
         },
     ];
 
@@ -84,7 +90,7 @@ const Header = ({ isMenu, setIsMenu }) => {
                             <NavLink
                                 key={"menuKey-" + el.name}
                                 className={
-                                    el.name.toLowerCase() === active
+                                    el.value === active
                                         ? "header__full__buttons--button header__full__buttons--active"
                                         : "header__full__buttons--button"
                                 }
