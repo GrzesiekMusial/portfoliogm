@@ -15,6 +15,11 @@ const Sidebar = ({ buttons, active }) => {
                     {el.name}
                 </NavLink>
             ))}
+
+            <img
+                src="https://res.cloudinary.com/gregor1494/image/upload/v1612044664/portfolio/full-stack-developer_1_drqtgk.svg"
+                alt="developer"
+            />
         </div>
     );
 };
