@@ -10,7 +10,7 @@
         {
             "title": "Bazar",
             "tech": ["REACT", "PWA", "YUP", "HTML", "CSS / SCSS", "JAVASCRIPT"],
-            "content": "The app for a local community.\nAnnounce important information on the board, sell things on the market.",
+            "content": "The app for a local community. \n Announce important information on the board, sell things on the market.",
             "live": "https://fathomless-reef-86046.herokuapp.com/board",
             "code": "https://github.com/GrzesiekMusial/bazar"
         },

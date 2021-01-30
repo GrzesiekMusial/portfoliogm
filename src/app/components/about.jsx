@@ -4,6 +4,19 @@ import { projects } from "../config/journey.json";
 import Button from "./common/button";
 
 const About = () => {
+    const showMore = (id) => {
+        try {
+            var offsetHeight = document.getElementById(`${id}-content`)
+                .offsetHeight;
+
+            document.getElementById(
+                `${id}-text`
+            ).style.cssText = `min-height: ${offsetHeight}px; max-height: ${offsetHeight}px`;
+
+            document.getElementById(id).classList.add("project--info");
+        } catch (ex) {}
+    };
+
     return (
         <div className="home">
             <h1 className="hi" data-aos="fade-down">
@@ -13,7 +26,10 @@ const About = () => {
             {projects.map((element) => (
                 <section key={element.title}>
                     <div className="block" id={element.title}>
-                        <div className="block__text">
+                        <div
+                            className="block__text"
+                            id={element.title + "-text"}
+                        >
                             <div
                                 className="block__text__header"
                                 data-aos="fade-up-right"
@@ -26,16 +42,13 @@ const About = () => {
                                 </ul>
                                 <div
                                     className="block__text__header--button"
-                                    onClick={() =>
-                                        document
-                                            .getElementById(element.title)
-                                            .classList.add("project--info")
-                                    }
+                                    onClick={() => showMore(element.title)}
                                 >
                                     <Button text="more info" />
                                 </div>
                             </div>
                             <div
+                                id={element.title + "-content"}
                                 className="block__text__content"
                                 data-aos="fade-up-right"
                                 data-aos-offset="-150"

@@ -191,6 +191,10 @@
     &__text {
         position: relative;
         width: 100%;
+        height: 100%;
+        min-height: 100px;
+        max-height: 500px;
+        transition: min-height 1s, max-height 1s;
 
         @media screen and (min-width: 1000px) {
             width: 50%;
@@ -198,6 +202,7 @@
 
         &__header {
             padding: 10px;
+            opacity: 1;
         }
 
         &__content {
@@ -261,11 +266,42 @@
 .project--info {
     background-color: var(--base-special-o);
 
-    & .block__text__header {
-        display: none;
+    & .block__text {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &__header {
+            // position: absolute;
+            opacity: 0 !important;
+        }
+        &__content {
+            animation: appear 1s linear;
+            visibility: visible;
+        }
     }
-    & .block__text__content {
-        visibility: visible;
+}
+
+@keyframes disappear {
+    0% {
         position: unset;
+        opacity: 1;
+    }
+    100% {
+        position: absolute;
+    }
+}
+
+@keyframes appear {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
     }
 }
