@@ -18,7 +18,7 @@ const About = () => {
     };
 
     return (
-        <div className="home">
+        <div className="about">
             <h1 className="hi" data-aos="fade-down">
                 My journey . . .
             </h1>
@@ -74,10 +74,10 @@ const About = () => {
 
             <section data-aos="fade-up">
                 <p>
-                    <span className="hi">This experience path,</span> step by
-                    step pushed me into scripting passion,
+                    <span className="hi">And</span> step by step, that pushed me
+                    into scripting passion,
                 </p>
-                <p>and i decided to completely devote into that world.</p>
+                <p>I decided to completely devote into that world.</p>
                 <p>
                     I continue to build web apps, keep learning new features and
                     looking for my first job as a developer.

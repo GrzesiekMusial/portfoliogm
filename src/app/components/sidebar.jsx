@@ -6,7 +6,7 @@ const Sidebar = ({ buttons, active }) => {
                 <NavLink
                     key={"menuKey-" + el.name}
                     className={
-                        el.value == active
+                        el.value === active
                             ? "sidebar--button sidebar--active"
                             : "sidebar--button"
                     }

@@ -3,6 +3,7 @@ import HamburgerMenu from "react-hamburger-menu";
 import { NavLink } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import Sidebar from "./sidebar";
+import logo from "../media/svg/logo.svg";
 
 const Header = ({ isMenu, setIsMenu }) => {
     const [active, setActive] = useState(null);
@@ -29,7 +30,7 @@ const Header = ({ isMenu, setIsMenu }) => {
 
     useEffect(() => {
         setActive(history.location.pathname.slice(1));
-    }, []);
+    }, [history.location.pathname]);
 
     const isInitialMount = useRef(true);
 
@@ -78,10 +79,7 @@ const Header = ({ isMenu, setIsMenu }) => {
                 </div>
 
                 <NavLink to="/" className="header__logo">
-                    <img
-                        alt="Logo"
-                        src="https://res.cloudinary.com/gregor1494/image/upload/v1611775790/portfolio/logo_dtlww4.svg"
-                    />
+                    <img alt="Logo" src={logo} />
                 </NavLink>
 
                 <div className="header__full">

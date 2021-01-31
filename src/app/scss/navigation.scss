@@ -204,7 +204,7 @@
             z-index: 1;
             width: 400px;
             height: 500px;
-            animation: arrow 20s infinite linear alternate;
+            animation: arrow 15s infinite linear alternate;
         }
     }
     justify-content: space-around;
@@ -215,6 +215,6 @@
         transform: rotate(-10deg) translateX(350px) translateY(-65px);
     }
     100% {
-        transform: rotate(0deg) translateX(300px) translateY(-60px);
+        transform: rotate(-3deg) translateX(310px) translateY(-65px);
     }
 }

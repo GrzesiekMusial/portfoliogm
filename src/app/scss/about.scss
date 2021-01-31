@@ -1,0 +1,38 @@
+.about {
+    width: 100%;
+    max-width: 1000px;
+    font-size: 1.2em;
+    color: var(--text);
+
+    & h1 {
+        font-size: 3em;
+    }
+
+    & section {
+        position: relative;
+        z-index: 2;
+        &:last-of-type {
+            transition: all 1s;
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+
+            & p {
+                margin: 7px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & section {
+            width: 100%;
+        }
+    }
+}
