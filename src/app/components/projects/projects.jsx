@@ -4,8 +4,6 @@ import Block from "./block";
 
 class Projects extends Component {
     render() {
-        window.scrollTo(0, 0);
-
         return (
             <main className="main">
                 <div className="project">
