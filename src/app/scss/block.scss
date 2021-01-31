@@ -57,6 +57,7 @@
             transition: all 1s;
             max-width: 500px;
             width: 100%;
+            height: auto;
             box-shadow: 0 0 5px var(--base-shadow);
             border-radius: 5px;
 
@@ -68,8 +69,9 @@
 @media (max-width: 1000px) {
     .block {
         &--image {
-            justify-content: flex-end;
             display: flex;
+            align-items: center;
+            justify-content: flex-end;
         }
     }
 }
