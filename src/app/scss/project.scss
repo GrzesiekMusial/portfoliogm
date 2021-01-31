@@ -200,23 +200,3 @@
     100% {
     }
 }
-
-.container {
-    position: relative;
-    z-index: 1;
-    margin: 10px;
-    margin-top: 90px;
-    display: flex;
-    max-width: 100%;
-    align-items: center;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    transition: opacity 1s;
-
-    &--blur {
-        @media screen and (max-width: 799px) {
-            opacity: 0.2;
-        }
-    }
-}

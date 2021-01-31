@@ -54,7 +54,7 @@ const Header = ({ isMenu, setIsMenu }) => {
         setIsMenu(false);
         const header = document.getElementById("header");
         var currentScrollPos = window.pageYOffset;
-        if (50 > currentScrollPos) {
+        if (150 > currentScrollPos) {
             header.style.top = "0";
         } else {
             header.style.top = "-100px";
