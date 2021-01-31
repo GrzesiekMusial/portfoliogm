@@ -4,7 +4,6 @@
             "title": "Portfolio",
             "tech": ["REACT", "HTML", "CSS / SCSS", "JAVASCRIPT"],
             "content": "My portfolio.",
-            "live": "http://localhost:3000/projects",
             "code": "https://github.com/GrzesiekMusial/portfolio-react"
         },
         {
