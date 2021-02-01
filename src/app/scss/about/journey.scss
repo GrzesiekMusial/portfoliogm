@@ -1,4 +1,4 @@
-.block {
+.journey {
     display: flex;
     position: relative;
     z-index: 5;
@@ -66,8 +66,40 @@
     }
 }
 
+.project--info {
+    background-color: var(--base-special-o);
+
+    & .journey__text {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &__header {
+            opacity: 0 !important;
+        }
+        &__content {
+            animation: appear 1s linear;
+            visibility: visible;
+        }
+    }
+}
+
+@keyframes appear {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 @media (max-width: 1000px) {
-    .block {
+    .journey {
         &--image {
             display: flex;
             align-items: center;
@@ -77,7 +109,7 @@
 }
 
 @media (min-width: 1000px) {
-    .block {
+    .journey {
         flex-direction: row;
     }
 }

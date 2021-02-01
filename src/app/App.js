@@ -5,7 +5,7 @@ import Header from "./components/header";
 import NotFound from "./components/notFound";
 import Projects from "./components/projects/projects";
 import Home from "./components/home";
-import About from "./components/about";
+import About from "./components/about/about";
 import Contact from "./components/contact";
 import AOS from "aos";
 import "aos/dist/aos.css";

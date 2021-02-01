@@ -9,10 +9,11 @@
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    transition: opacity 1s, filter 0.5s;
+    transition: opacity 1s, filter 0.01s;
 
     &--blur {
         @media screen and (max-width: 799px) {
+            transition: opacity 1s, filter 1s;
             opacity: 0.4;
             filter: blur(3px);
         }
