@@ -9,11 +9,13 @@ const About = () => {
                 My journey . . .
             </h1>
 
-            {projects.map((element) => (
-                <Block element={element} />
-            ))}
+            <section className="about--section">
+                {projects.map((element, index) => (
+                    <Block key={`journey-${index}`} element={element} />
+                ))}
+            </section>
 
-            <section data-aos="fade-up">
+            <section data-aos="fade-up" className="about--section">
                 <p>
                     <span className="hi">And</span> step by step, that pushed me
                     into scripting passion,

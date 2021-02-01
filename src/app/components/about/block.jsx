@@ -15,7 +15,7 @@ const Block = ({ element }) => {
     };
 
     return (
-        <section key={element.title}>
+        <article key={element.title}>
             <div className="journey" id={element.title}>
                 <div className="journey__text" id={element.title + "-text"}>
                     <div
@@ -54,7 +54,7 @@ const Block = ({ element }) => {
             </div>
             <br />
             <br />
-        </section>
+        </article>
     );
 };
 
