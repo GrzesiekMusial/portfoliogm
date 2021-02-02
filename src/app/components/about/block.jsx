@@ -49,7 +49,12 @@ const Block = ({ element }) => {
                     data-aos="fade-up-left"
                     data-aos-offset="0"
                 >
-                    <img src={element.image} alt={element.title + " image"} />
+                    <img
+                        src={element.image}
+                        alt={element.title + " image"}
+                        height="50"
+                        width="100"
+                    />
                 </div>
             </div>
             <br />
